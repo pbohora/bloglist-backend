@@ -19,12 +19,12 @@ mongoose
 
 app.use(cors())
 
-app.use(express.static('build'))
 app.use(bodyParser.json())
 
 app.use(middleware.tokenExtractor)
 app.use(middleware.requestLogger)
 
+app.use(express.static('build'))
 app.use('/api/login', loginRouter)
 app.use('/api/blogs', blogsRouter)
 app.use('/api/users', usersRouter)
