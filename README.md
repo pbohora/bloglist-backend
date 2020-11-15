@@ -36,13 +36,15 @@ cd Bloglist-frontend/
 npm install
 ```
 
-### 3. Add .env file
+#### 3. Add .env file
 
 Create a .env file at the root of the project with following environment variables
 
 ```
 MONGODB_URI=<your MongoDB database URI>
 TEST_MONGODB_URI=<your MongoDB test database URI>
+PORT=<Port where you wan to run the application eg: 3001>
+SECRET=<any random text for JWT secret>
 ```
 
 #### 4. Run the application
