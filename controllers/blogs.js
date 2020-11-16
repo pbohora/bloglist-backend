@@ -33,6 +33,7 @@ blogsRouter.post("/", async (request, response, next) => {
       url: body.url,
       likes: body.likes || 0,
       user: user._id,
+      content: body.content,
     });
 
     if (blog.title && blog.url) {
